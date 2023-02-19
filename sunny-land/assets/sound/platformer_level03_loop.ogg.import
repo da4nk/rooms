@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/platformer_level03_loop.ogg-d6b37d66beeab44e99e9b549043168ce.oggstr"
+path="res://.import/platformer_level03_loop.ogg-33e35da747792705d78a6ee37fa0aa73.oggstr"
 
 [deps]
 
-source_file="res://sunny-land/assets/sound/platformer_level03_loop.ogg"
-dest_files=[ "res://.import/platformer_level03_loop.ogg-d6b37d66beeab44e99e9b549043168ce.oggstr" ]
+source_file="res://rooms/sunny-land/assets/sound/platformer_level03_loop.ogg"
+dest_files=[ "res://.import/platformer_level03_loop.ogg-33e35da747792705d78a6ee37fa0aa73.oggstr" ]
 
 [params]
 

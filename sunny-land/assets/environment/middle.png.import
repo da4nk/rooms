@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/middle.png-0f5e9d2e364fe4b1adca119de861c7fd.stex"
+path="res://.import/middle.png-c57540d62b979d91a19ff808c4948dcc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sunny-land/assets/environment/middle.png"
-dest_files=[ "res://.import/middle.png-0f5e9d2e364fe4b1adca119de861c7fd.stex" ]
+source_file="res://rooms/sunny-land/assets/environment/middle.png"
+dest_files=[ "res://.import/middle.png-c57540d62b979d91a19ff808c4948dcc.stex" ]
 
 [params]
 

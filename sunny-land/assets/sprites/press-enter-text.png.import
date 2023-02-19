@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/press-enter-text.png-5b6232c7cd6bd8075871eb1bc5dd81f2.stex"
+path="res://.import/press-enter-text.png-91319f0f615d47b19f5b2428dcd17fc0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sunny-land/assets/sprites/press-enter-text.png"
-dest_files=[ "res://.import/press-enter-text.png-5b6232c7cd6bd8075871eb1bc5dd81f2.stex" ]
+source_file="res://rooms/sunny-land/assets/sprites/press-enter-text.png"
+dest_files=[ "res://.import/press-enter-text.png-91319f0f615d47b19f5b2428dcd17fc0.stex" ]
 
 [params]
 

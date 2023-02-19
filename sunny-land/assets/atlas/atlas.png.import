@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/atlas.png-54c53687643ae901f7809e2370f4b52b.stex"
+path="res://.import/atlas.png-38a52903e92fb427ed4800d496e8fcfc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sunny-land/assets/atlas/atlas.png"
-dest_files=[ "res://.import/atlas.png-54c53687643ae901f7809e2370f4b52b.stex" ]
+source_file="res://rooms/sunny-land/assets/atlas/atlas.png"
+dest_files=[ "res://.import/atlas.png-38a52903e92fb427ed4800d496e8fcfc.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/collision.png-424965c5f4ae3bacd151e368c5c9204b.stex"
+path="res://.import/collision.png-2777e0204153dda4a00d86eaf2a73f54.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sunny-land/assets/environment/collision.png"
-dest_files=[ "res://.import/collision.png-424965c5f4ae3bacd151e368c5c9204b.stex" ]
+source_file="res://rooms/sunny-land/assets/environment/collision.png"
+dest_files=[ "res://.import/collision.png-2777e0204153dda4a00d86eaf2a73f54.stex" ]
 
 [params]
 
