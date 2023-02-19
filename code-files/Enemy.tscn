@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://viking2.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends KinematicBody2D
+
+# Enemy movement speed
+const SPEED = 10
+
+# Enemy attack range
+const ATTACK_RANGE = 10
+
+# Enemy attack damage
+const ATTACK_DAMAGE = 0.5
+
+# Player node reference
+var player = true
+
+# Enemy direction
+var direction = Vector2.LEFT
+
+# Enemy target positions
+var target_positions = [Vector2(1, 0), Vector2(-1, 0)]
+var current_target = 0
+
+func die():
+	queue_free()
+
+func _ready():
+	# Find the player node
+	player = get_node(\"/root/world/Player\")
+
+func _physics_process(delta):
+	# Move the enemy
+	move_and_slide(direction * SPEED)
+
+	# Check if the player is within attack range
+	var distance_to_player = position.distance_to(player.position)
+	if distance_to_player < ATTACK_RANGE:
+		# Attack the player
+		player.take_damage(ATTACK_DAMAGE)
+
+	# Check for obstacles and change direction if necessary
+	var collision = move_and_collide(direction * SPEED * delta)
+	if collision:
+		direction = -direction
+
+	# Flip the sprite depending on the direction
+	if direction.x > 0:
+		get_node(\"Sprite\").flip_h = true
+	else:
+		get_node(\"Sprite\").flip_h = false
+
+	# Check if the enemy has reached its current target position
+	if position.distance_to(target_positions[current_target]) < 5:
+		# Switch to the next target position in the loop
+		current_target = (current_target + 1) % target_positions.size()
+		# Calculate the new direction towards the next target position
+		direction = (target_positions[current_target] - position).normalized()
+
+	
+"
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 13, 13 )
+
+[node name="Enemy" type="KinematicBody2D" groups=["Enemy"]]
+script = SubResource( 1 )
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2( 3, -3 )
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 0.905882, 0.682353, 0.682353, 1 )
+position = Vector2( 0, -8 )
+texture = ExtResource( 1 )
+hframes = 9
+vframes = 6
